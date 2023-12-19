@@ -72,7 +72,45 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        {/* <Image src="/images/about-image.png" width={500} height={500} /> */}
+        <section className="w-80 lg:w-full box-border h-[500px] shadow-[0_0.5rem_1rem_rgba(0,0,0,.4)]">
+          <div className="p-5 rounded-tl-lg rounded-tr-lg text-base bg-gray-500">
+            <span className="pr-4">🔴</span>
+            <span className="pr-4">🟡</span>
+            <span>🟢</span>
+          </div>
+          <div className="rounded-bl-lg rounded-br-lg text-lg font-mono bg-gray-800 pl-4 pr-4">
+            <p className="pt-4 pb-4">
+              <span className="text-green-400">hongthynguyen $ </span>
+              cd information
+            </p>
+
+            <p className="pt-4 pb-4">
+              <span className="text-green-400">information $ </span>
+              ls
+            </p>
+
+            <p className="pb-2">
+              <span className="text-green-400">linkedin </span>
+              hong-thy-nguyen
+            </p>
+
+            <p className="pb-2">
+              <span className="text-green-400">github </span>
+              thieng101
+            </p>
+            <p className="pb-2">
+              <span className="text-green-400">email </span>
+              ho125066@gmail.com
+            </p>
+
+            <p className="pb-2">
+              <span className="text-green-400">fun facts </span>I am a big fan
+              of the Marvel Cinematic Universe 😊
+            </p>
+          </div>
+        </section>
+
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
