@@ -5,43 +5,62 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "languages",
+    id: "languages",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>C</li>
+        <li>Java</li>
+        <li>Python</li>
         <li>JavaScript</li>
-        <li>React</li>
+        <li>C#</li>
+        <li>HTML</li>
+        <li>CSS</li>
       </ul>
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Frameworks",
+    id: "Frameworks",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Next.js</li>
+        <li>React.js</li>
+        <li>Flutter</li>
+        <li>.NET</li>
+        <li>Flutter</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Databases",
+    id: "Databases",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>MongoDB</li>
+        <li>NoSQL</li>
+        <li>SQL</li>
+        <li>Firebase</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Tools",
+    id: "Tools",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Git</li>
+        <li>Postman</li>
+        <li>Heroku</li>
+        <li>Figma</li>
+        <li>Google Cloud</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("languages");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -57,34 +76,47 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            Hello! My name is Hong Thy Nguyen. I am currently an undergraduate
+            student at the University of Central Florida. I am majoring in
+            Computer Science. My interests are Cybersecurity, Fullstack
+            Development, and Artificial Intelligence. I look forward to working
+            in software development or cybersecurity field where I can either
+            develop innovative software or protect the system from cyber
+            attacks.
+          </p>
+          <br></br>
+          <p className="text-base lg:text-lg">
+            In my freetime, I enjoy playing video games, watching movies, and
+            playing pickleball.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("languages")}
+              active={tab === "languages"}
             >
               {" "}
-              Skills{" "}
+              Programming Languages{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("Frameworks")}
+              active={tab === "Frameworks"}
             >
               {" "}
-              Education{" "}
+              Frameworks{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("Databases")}
+              active={tab === "Databases"}
             >
               {" "}
-              Certifications{" "}
+              Databases{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("Tools")}
+              active={tab === "Tools"}
+            >
+              {" "}
+              Tools{" "}
             </TabButton>
           </div>
           <div className="mt-8">
