@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
@@ -91,16 +92,28 @@ const AboutSection = () => {
             </p>
 
             <p className="pb-2">
-              <span className="text-green-400">linkedin </span>
+              <Link
+                href="https://www.linkedin.com/in/hong-thy-nguyen/"
+                className="text-green-400"
+              >
+                linkedin{" "}
+              </Link>
               hong-thy-nguyen
             </p>
 
             <p className="pb-2">
-              <span className="text-green-400">github </span>
+              <Link
+                href="https://github.com/thieng101"
+                className="text-green-400"
+              >
+                github{" "}
+              </Link>
               thieng101
             </p>
             <p className="pb-2">
-              <span className="text-green-400">email </span>
+              <Link href="/#contact" className="text-green-400">
+                email{" "}
+              </Link>
               ho125066@gmail.com
             </p>
 
