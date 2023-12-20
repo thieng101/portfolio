@@ -27,9 +27,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Next.js</li>
         <li>React.js</li>
-        <li>Flutter</li>
         <li>.NET</li>
-        <li>Flutter</li>
       </ul>
     ),
   },
