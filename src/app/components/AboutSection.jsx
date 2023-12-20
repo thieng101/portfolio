@@ -134,10 +134,7 @@ const AboutSection = () => {
             attacks.
           </p>
           <br></br>
-          <p className="text-base lg:text-lg">
-            In my freetime, I enjoy playing video games, watching movies, and
-            playing pickleball.
-          </p>
+          <p className="text-base lg:text-lg">Check out my tech stack 👇</p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("languages")}
