@@ -33,15 +33,16 @@ const projectsData = [
     gitUrl: "https://github.com/NlsnBoa/Contact-Manager.git",
     previewUrl: "/",
   },
-  // {
-  //   id: 4,
-  //   title: "Food Ordering Application",
-  //   description: "Project 4 description",
-  //   image: "/images/projects/4.png",
-  //   tag: ["All", "Mobile"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
+  {
+    id: 4,
+    title: "Employee Management System",
+    description:
+      "An management system designed to streamline the process of managing employee information, salaries, and related data",
+    image: "/images/projects/4.png",
+    tag: ["All", "Program"],
+    gitUrl: "https://github.com/thieng101/Employee-Management-System.git",
+    previewUrl: "/",
+  },
   // {
   //   id: 5,
   //   title: "React Firebase Template",
@@ -100,6 +101,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Program"
+          isSelected={tag === "Program"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
