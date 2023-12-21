@@ -15,8 +15,8 @@ const TAB_DATA = [
         <li>Python</li>
         <li>JavaScript</li>
         <li>C#</li>
-        <li>HTML</li>
-        <li>CSS</li>
+        {/* <li>HTML</li>
+        <li>CSS</li> */}
       </ul>
     ),
   },
@@ -70,22 +70,22 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 place-items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         {/* <Image src="/images/about-image.png" width={500} height={500} /> */}
-        <section className="w-80 lg:w-full box-border h-[500px] shadow-[0_0.5rem_1rem_rgba(0,0,0,.4)]">
+        <section className="w-full lg:max-w-2xl xl:max-w-4xl box-border mx-auto lg:h-[600px] shadow-[0_0.5rem_1rem_rgba(0,0,0,.4)]">
           <div className="p-5 rounded-tl-lg rounded-tr-lg text-base bg-gray-500">
             <span className="pr-4">🔴</span>
             <span className="pr-4">🟡</span>
             <span>🟢</span>
           </div>
           <div className="rounded-bl-lg rounded-br-lg text-lg font-mono bg-gray-800 pl-4 pr-4">
-            <p className="pt-4 pb-4">
+            <p className="pt-4">
               <span className="text-green-400">hongthynguyen $ </span>
-              cd information
+              cd info
             </p>
 
             <p className="pt-4 pb-4">
-              <span className="text-green-400">information $ </span>
+              <span className="text-green-400">info $ </span>
               ls
             </p>
 
@@ -116,14 +116,24 @@ const AboutSection = () => {
             </p>
 
             <p className="pb-2">
-              <span className="text-green-400">fun facts </span>I am a big fan
-              of the Marvel Cinematic Universe 😊
+              <span className="text-green-400">certificates </span>
+
+              <p>1. The GWC Bank of America Work Prep Summer 2023.</p>
+              <p>2.AT&T Technology Academy Summer 2023.</p>
+            </p>
+
+            <p className="pb-2">
+              <span className="text-green-400">fun facts </span>
+              <p>
+                I am a 🐱 & 🐶 lover. I want to raise a kitty and a puppy at a
+                same time!
+              </p>
             </p>
           </div>
         </section>
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">My Story</h2>
           <p className="text-base lg:text-lg">
             Hello! My name is Hong Thy Nguyen. I am currently an undergraduate
             student at the University of Central Florida. I am majoring in
@@ -135,13 +145,13 @@ const AboutSection = () => {
           </p>
           <br></br>
           <p className="text-base lg:text-lg">Check out my tech stack 👇</p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-col md:flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("languages")}
               active={tab === "languages"}
             >
               {" "}
-              Programming Languages{" "}
+              Languages{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("Frameworks")}

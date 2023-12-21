@@ -24,11 +24,11 @@ const HeroSection = () => {
               sequence={[
                 "Hong Thy Nguyen",
                 1000,
-                "Web Developer",
+                "A Web Developer",
                 1000,
-                "Cybersecurity Enthusiast",
+                "A Cybersecurity Enthusiast",
                 1000,
-                "UI/UX Designer",
+                "An UI/UX Designer",
                 1000,
               ]}
               wrapper="span"
@@ -38,7 +38,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             If you are looking for an innovative, passionate, and creative
-            developer, you have found me.
+            developer, you have found one.
           </p>
           <div>
             <Link
