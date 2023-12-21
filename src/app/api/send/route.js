@@ -24,7 +24,7 @@ export async function POST(req, res) {
           </p>
           <p>Best Regards,</p>
           <p>Hong Thy Nguyen</p>
-          <p>{myEmail}</p>
+          {/* <p>{myEmail}</p> */}
 
           <p>Your message submitted:</p>
           <p>{message}</p>
