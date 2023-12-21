@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Thy does work ",
-  description: "Developed by Hong Thy Nguyen",
+  title: "Thy Does Work ",
+  description: "A Personal Portfolio Developed by Hong Thy Nguyen",
 };
 
 export default function RootLayout({ children }) {

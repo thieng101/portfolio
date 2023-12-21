@@ -8,11 +8,12 @@ const projectsData = [
   {
     id: 1,
     title: "Portfolio Website",
-    description: "My porfolio website is built with Next.js and TailwindCSS",
+    description:
+      "My responsive porfolio website is built with Next.js and TailwindCSS and deployed on Vercel.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/thieng101/portfolio.git",
-    previewUrl: "/",
+    previewUrl: "https://www.thydoeswork.dev/",
   },
   {
     id: 2,
